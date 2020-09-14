@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+
+:root {
+	--dark-background: #15202B;
+	--white-text: #FFFFFF;
+	--gray-text: #8899a6;
+	--focused-blue: #1DA1F2;
+	--unfocused-light-blue: #19618F;
+	--unfocused-dark-blue: #192734;
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html, body, #root {
+	height: 100vh;
+}
+
+body,
+input,
+button,
+textarea {
+	background-color: var(--dark-background);
+	color: var(--gray-text);
+}
+
+.main-container {
+	margin: 0 8.5vw;
+}
+
+.logo-container {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.logo-container img {
+	height: 30px;
+}
+
+.title-container {
+	text-align: center;
+}
+
+.title-container h1 {
+	margin-bottom: 10px;
+	color: var(--white-text);
+	font-size: 20px;
+}
+
+.form-container {
+	margin: 15px 0;
+}
+
+.form-container .input-container {
+	width: 100%;
+	padding: 10px;
+	background: var(--unfocused-dark-blue);
+	border-bottom: 2.5px solid var(--gray-text);
+}
+
+.form-container .input-container:focus-within {
+	border-bottom: 2.5px solid var(--focused-blue);
+	color: var(--focused-blue);
+}
+
+.form-container .input-container label {
+	font-size: 13px;
+}
+
+.form-container .input-container input {
+	width: 100%;
+	margin-top: 4px;
+	font-size: 16px;
+	background: var(--unfocused-dark-blue);
+	border-color: var(--unfocused-dark-blue);
+	color: var(--white-text);
+	border: none;
+}
+
+.form-container .submit-container {
+	width: 100%;
+	height: 50px;
+}
+
+.form-container .submit-container input {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: var(--unfocused-light-blue);
+	border: var(--unfocused-light-blue);
+	border-radius: 25px;
+}
+
+.form-container .submit-container input:hover,
+.form-container .submit-container input:focus {
+	background-color: var(--focused-blue);
+	border: var(--focused-blue);
+	color: var(--white-text);
+	cursor: pointer;
+}
+
+.other-options {
+	width: 100%;
+	margin-top: 30px;
+	font-size: 13px;
+	display: flex;
+	justify-content: center;
+}
+
+.other-options a {
+	color: var(--focused-blue);
+	text-decoration: none;
+}
+
+.other-options a:hover,
+.other-options a:focus {
+	text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+	.main-container {
+		margin: 0 calc((100vw - 500px)/2);
+	}
+}

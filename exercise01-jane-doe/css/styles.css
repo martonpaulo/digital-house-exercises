@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+	--selected-red: #C6524A;
+	--bold-orange: #DDA451;
+	--soft-unfocused-gray: #D3CCC5;
+	--unfocused-gray: #70686F;
+}
+
+* {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html, body, #root {
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	text-align: center;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+	border: 2px var(--soft-unfocused-gray) solid;
+}
+
+header nav {
+	padding: 30px 0 10px 0;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 38vw;
+}
+
+header nav ul li .selected,
+header nav ul li :hover {
+	color: var(--selected-red);
+	font-weight: 700;
+}
+
+header nav ul li a {
+	color: var(--unfocused-gray);
+}
+
+#banner {
+	background-image: url(../img/jane.jpg);
+	width: 100%;
+	height: 700px;
+	background-size: cover;
+	margin-top: -90px;
+}
+
+section article {
+	margin: 100px 200px;
+}
+
+#illustration img {
+	width: 50%;
+	float: left;
+	padding-bottom: 50px;
+}
+
+#songs {
+	padding: 50px;
+	float: left;
+}
+
+#songs ol li {
+	margin-bottom: 20px;
+}
+
+#songs ol li a {
+	color: var(--bold-orange);
+	font-weight: 700;
+}
+
+footer {
+	background-color: #F2F2F2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	clear: both;
+}

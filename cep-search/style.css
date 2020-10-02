@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+:root {
+	--light-old-black: #645D4D;
+	--dark-old-black: #252420;
+}
+
+html, body, #root {
+	height: 100vh;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-image: url("background.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: var(--dark-old-black);
+	justify-content: center;
+}
+
+main {
+	position: absolute;
+  top: 35%;
+	left: 50%;
+	width: 40%;
+	min-width: 300px;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	border: 3px var(--light-old-black) solid;
+	padding: 15px 20px;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+
+p#p-alert {
+	font-size: 0.8rem;
+	color: #5f0d0d;
+	text-align: right;
+	margin-bottom: 5px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-family: 'Architects Daughter', cursive;
+	border-bottom: 1.5px var(--light-old-black) solid;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	min-height: 28px;
+}
+
+form {
+	display: flex;
+	justify-content: flex-end;	
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+form > p {
+	margin-top: auto;
+	margin-right: 10px;
+}
+
+input {
+	height: 35px;
+	width: 30px;
+	margin: 2px 2px 0;
+	text-align: center;
+	font-size: 20px;
+	background: transparent;
+	border: 1.5px var(--light-old-black) solid;
+}
+
+input:focus {
+	outline: 3px var(--dark-old-black) solid;
+}
+
+@media (min-width: 1050px){
+	div.second-block::before {
+		content: "–";
+		font-size: 20px;
+		margin-left: 4px;
+	}
+}

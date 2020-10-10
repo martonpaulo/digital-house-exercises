@@ -2,9 +2,11 @@
 
 :root {
 	--selected-red: #C6524A;
+	--vivid-red: #E7402D;
+	--strong-red: #a52719;
 	--bold-orange: #DDA451;
 	--soft-unfocused-gray: #D3CCC5;
-	--unfocused-gray: #70686F;
+	--unfocused-gray: #70686a;
 }
 
 * {
@@ -81,7 +83,8 @@ section article {
 }
 
 #about,
-#music {
+#music,
+#contact {
 	margin-top: 200px;
 }
 
@@ -90,6 +93,37 @@ section#about article h3,
 section#about article p {
 	padding: 10px 0;
 	text-align: center;
+}
+
+section#contact article h2 {
+	margin-bottom: 40px;
+}
+
+.input-block ,
+.selection-block {
+	margin-bottom: 18px;
+}
+
+.input-block input {
+	width: 95%;
+	border-style: none;
+	font-size: 18px;
+	padding: 5px;
+	border: 1px solid var(--soft-unfocused-gray);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin: 0 8px 0 4px;
+}
+
+input[type="submit"] {
+	background-color: var(--vivid-red);
+	color: white;
+	font-weight: bold;
+	padding: 5px 15px;
+	border: 1px solid var(--strong-red);
+	cursor: pointer;
 }
 
 section#music article ul {
@@ -111,6 +145,22 @@ section#music article ul li {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+}
+
+#form-and-map {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+form,
+#map {
+	width: 50%;
+	min-width: 300px;
+	margin-bottom: 50px;
+}
+
+#map iframe {
+	width: 100%;
 }
 
 #illustration {
@@ -154,12 +204,36 @@ iframe {
 	margin: 10px 0;
 }
 
+#contacts {
+	margin-bottom: 20px;
+}
+
+#contacts p {
+	padding: 10px 0;
+}
+
+#contacts h4 {
+	padding: 18px 0 10px;
+}
+
+#contacts a {
+	text-decoration: underline;
+}
+
+hr {
+	color: var(--soft-unfocused-gray);
+}
+
+footer,
+.push {
+	height: 40px;
+}
+
 footer {
 	background-color: #F2F2F2;
 	display: flex;
 	justify-content: center;
 	padding: 10px 0;
-	height: 40px;
 }
 
 @media (max-width: 800px) {
@@ -175,7 +249,6 @@ footer {
 		width: 240px;
 		height: 180px;
 	}
-
 }
 
 @media (min-width: 720px) {

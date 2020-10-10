@@ -19,6 +19,11 @@ html, body, #root {
 	height: 100vh;
 }
 
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -40px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -75,6 +80,33 @@ section article {
 	margin: 100px 16vw 0;
 }
 
+#about,
+#music {
+	margin-top: 200px;
+}
+
+section#about article h2,
+section#about article h3,
+section#about article p {
+	padding: 10px 0;
+	text-align: center;
+}
+
+section#music article ul {
+	margin-left: 35px;
+}
+
+section#music article ul li {
+	margin: 5px 0;
+}
+
+#photo {
+	max-width: 30%;
+	padding: 5px 0 50px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
 #illustration-and-songs {
 	display: flex;
 	flex-wrap: wrap;
@@ -88,7 +120,7 @@ section article {
 	margin: auto 0;
 }
 
-#illustration img {
+img {
 	width: 100%;
 }
 
@@ -105,23 +137,45 @@ section article {
 	font-weight: 700;
 }
 
+.video {
+	margin: 20px 0;
+}
+
+iframe {
+	width: 640px;
+	height: 360px;
+}
+
+#technical-details {
+	margin-bottom: 100px;
+}
+
+#technical-details p {
+	margin: 10px 0;
+}
+
 footer {
 	background-color: #F2F2F2;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	padding: 10px 0;
-	clear: both;
+	height: 40px;
 }
 
 @media (max-width: 800px) {
 	section article {
-		margin: 100px 10vw;
+		margin: 100px 10vw 0;
 	}
 
 	#illustration img {
 		width: 100%;
 	}
+
+	iframe {
+		width: 240px;
+		height: 180px;
+	}
+
 }
 
 @media (min-width: 720px) {
